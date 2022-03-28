@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String k = edit1.getText().toString();
+                String k = edit1.getText().toString(); // getText는 오브젝트를 받아온다 오브젝트는 문자형보다 큰 타입이다
                 try {
                     int a = Integer.parseInt(k);
                     if (i < a){
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         txt1.setText("정답입니다.");
                     }
                 }catch (Exception e){
-                    // str{}catch() = {}안이 실행이 불가하면  catch로 실행
+                    // try{}catch() = {}안이 실행이 불가하면  catch로 실행
                     // toString() = 문자열로 값 받아오기
                     // Integet.parseInt = 정수형으로 형 변환
                     txt1.setText("다시 입력하세요(숫자만 입력 가능)");
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txt1.setText(i + "");
-            }
+            } // 문자 + "" 문자에 ""를 씌워준다.
         });
     }
 }
