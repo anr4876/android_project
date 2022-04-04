@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 (ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         lLayout.addView(txt);
 
-        String[] age = {"7", "8", "8", "+", // 버튼 txt값
+        String[] key = {"7", "8", "8", "+", // 버튼 txt값
                         "4", "5", "6", "-",
                         "1", "2", "3", "×",
                         " ", "0", "=", "÷"};
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             for (int j = 1; j <= 4; j++) {
                 int qwe = (x * 4) + j;
                 btn[qwe - 1] = new Button(this); // 현재 만들고있는 액티비티에 버튼을 생성한다고 명령
-                btn[qwe - 1].setText(age[qwe - 1]);
+                btn[qwe - 1].setText(key[qwe - 1]);
                 btn[qwe - 1].setLayoutParams(params); // 각 구간에 일정한 비율로 공간 할당
                 btn[qwe - 1].setOnClickListener(BL); // 버튼 클릭시 BtnListner 클래스 실행
                 if (x == 0) {
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) { // 버튼 클릭시 실행
             str = ((Button) view).getText().toString();
-            try{ // {}안이 실행불가하면 catch로 넘어감
+            try{ // try{}안이 실행불가하면 catch로 넘어감
                 double a = Double.parseDouble(str); // 계산 결과가 소수가 가능함
                 num[0] = (10*num[0]) + a; // 전에 사용했던 숫자는 *10을 통해서 자리를 바꿔줌
                 txt.setText(num[0] + ""); // num을 txt에 출력
