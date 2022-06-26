@@ -15,7 +15,6 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
     MyThread _thread;
     Snow[] _balls;
     SurfaceHolder holder;
-    ImageView kk = findViewById(R.id.img);
     public MySurfaceView(Context context) {
         super(context);
 

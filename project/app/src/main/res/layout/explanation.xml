@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="게임 설명"
+        android:id="@+id/txt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="18dp"
+        android:text="1. 상자를 4개의 버튼으로 이동하여 공을 피하는 게임이다.
+        \n2. 공의 색은 4초마다 바뀌며 파랑색일때는 공에 닿아있어도 상관이없다
+        \n3. 게임을 다시하고싶으면 오른쪽 상단에 다시하기 버튼이 있다.
+        \n4. 초록색 상태에서 공이랑 닿으면 화면이 정지한다.
+        \n5. 게임 정지시 오른쪽 상단의 다시하기 버튼으로 게임을 다시 진행할수있다."
+        />
+
+    <Button
+        android:id="@+id/game_start3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="20dp"
+        android:background="#A0ECEC"
+        android:paddingLeft="20dp"
+        android:paddingTop="25dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="25dp"
+        android:text="게임 시작" />
+
+
+</LinearLayout>

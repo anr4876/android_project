@@ -9,41 +9,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-        <kr.ac.mokwon.project.MySurFaceView
-            android:layout_width="240dp"
-            android:layout_height="330dp"
-            android:layout_weight="0.5"
-            android:id="@+id/view"/>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        <ImageView
-            android:layout_marginTop="30dp"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:id="@+id/image1"
-            />
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:id="@+id/image2"
-            />
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:id="@+id/image3"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00000"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp"
-            android:id="@+id/score"
-            />
-        </LinearLayout>
+        <kr.ac.mokwon.project.MySurFaceView
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="310dp"
+            android:layout_weight="9" />
+
+        <Button
+            android:id="@+id/retur"
+            android:layout_width="2dp"
+            android:layout_height="165dp"
+            android:layout_weight="1.2"
+            android:text="다시하기"
+            android:textSize="10dp" />
+
 
     </LinearLayout>
 
@@ -52,29 +32,43 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
             android:text="왼"
             android:id="@+id/left_button"
             />
-        <Button
-            android:layout_marginTop="20dp"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/down_button"
-            android:text="아래"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="오"
-            android:id="@+id/right_button"
-            />
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/up_button"
+                android:text="위"/>
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/down_button"
+                android:text="아래"/>
+        </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/change_button"
-            android:text="CHANGE"/>
+            android:text="오"
+            android:layout_weight="1"
+
+            android:id="@+id/right_button"
+            />
 
 
     </LinearLayout>

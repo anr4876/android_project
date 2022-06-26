@@ -12,7 +12,6 @@ import androidx.compose.ui.graphics.Paint;
 public class MySurFaceView extends SurfaceView implements SurfaceHolder.Callback {
 
     MyThread _thread ;
-
     Player _player;
     boolean _isDown;
     float _x,_y;
@@ -26,7 +25,7 @@ public class MySurFaceView extends SurfaceView implements SurfaceHolder.Callback
 
     @Override
     public void surfaceCreated(@NonNull SurfaceHolder surfaceHolder) {
-        TreadDestroyO();
+            TreadDestroyO();
 
         _thread = new MyThread(this, surfaceHolder);
         _thread.SetIsRun(true);
@@ -68,6 +67,7 @@ public class MySurFaceView extends SurfaceView implements SurfaceHolder.Callback
 
     public void MoveOn(float speedX, float speedY){
         _isDown = true;
+
         _x = speedX;
         _y = speedY;
     }

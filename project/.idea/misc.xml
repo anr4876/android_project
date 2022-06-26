@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/git_code_up/android_project/project/app/src/main/res/layout/activity_main.xml" value="0.17916666666666667" />
-        <entry key="..\:/git_code_up/android_project/project/app/src/main/res/layout/game_play.xml" value="0.17916666666666667" />
+        <entry key="..\:/git_code_up/android_project/project/app/src/main/res/layout/explanation.xml" value="0.17916666666666667" />
+        <entry key="..\:/git_code_up/android_project/project/app/src/main/res/layout/game_out.xml" value="0.15081521739130435" />
+        <entry key="..\:/git_code_up/android_project/project/app/src/main/res/layout/game_play.xml" value="0.4466666666666667" />
       </map>
     </option>
   </component>

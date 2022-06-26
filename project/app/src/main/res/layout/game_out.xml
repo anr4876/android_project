@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="104dp"
+        android:paddingLeft="34.5dp"
+        android:paddingRight="34.5dp"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="게임 아웃"
+        android:background="#A0ECEC"
+        android:id="@+id/text2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시하기"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="115dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"
+            android:background="#A0ECEC"
+            android:id="@+id/game_start2"
+            />
+
+    </LinearLayout>
+</LinearLayout>

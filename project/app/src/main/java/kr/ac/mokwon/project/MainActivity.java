@@ -16,14 +16,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button start_btn = findViewById(R.id.game_start);
-        Button sound_btn = findViewById(R.id.game_sound);
+
 
         start_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) { // 버튼 클릭시 다른 레이아웃으로 화면 전환
-                Intent intent = new Intent(getApplicationContext(), SubActivity.class);
+                Intent intent = new Intent(MainActivity.this, ExplanationActivity.class);
                 startActivity(intent);
+
+
             }
+
         });
+
     }
+
 }
